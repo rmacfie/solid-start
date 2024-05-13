@@ -34,6 +34,7 @@
     "./client": "./dist/client/index.jsx",
     "./client/islands": "./dist/client/islands.jsx",
     "./client/spa": "./dist/client/spa/index.jsx"
+    "./env": "./env.d.ts",
   },
   "typesVersions": {
     "*": {

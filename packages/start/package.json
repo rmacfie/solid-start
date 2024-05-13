@@ -25,34 +25,44 @@
   ],
   "types": "./dist/index.d.ts",
   "exports": {
-    ".": "./dist/index.jsx",
-    "./config": "./config/index.js",
-    "./middleware": "./dist/middleware/index.jsx",
-    "./router": "./dist/router/index.jsx",
-    "./server": "./dist/server/index.jsx",
-    "./server/spa": "./dist/server/spa/index.jsx",
-    "./client": "./dist/client/index.jsx",
-    "./client/islands": "./dist/client/islands.jsx",
-    "./client/spa": "./dist/client/spa/index.jsx"
-    "./env": "./env.d.ts",
-  },
-  "typesVersions": {
-    "*": {
-      ".": [
-        "./dist/index.d.ts"
-      ],
-      "middleware": [
-        "./dist/middleware/index.d.ts"
-      ],
-      "router": [
-        "./dist/router/index.d.ts"
-      ],
-      "server": [
-        "./dist/server/index.d.ts"
-      ],
-      "client": [
-        "./dist/client/index.d.ts"
-      ]
+    ".": {
+      "import": "./dist/index.jsx",
+      "types": "./dist/index.d.ts"
+    },
+    "./env": {
+      "types": "./env.d.ts"
+    },
+    "./config": {
+      "import": "./config/index.js",
+      "types": "./config/index.d.ts"
+    },
+    "./middleware": {
+      "import": "./dist/middleware/index.jsx",
+      "types": "./dist/middleware/index.d.ts"
+    },
+    "./router": {
+      "import": "./dist/router/index.jsx",
+      "types": "./dist/router/index.d.ts"
+    },
+    "./server": {
+      "import": "./dist/server/index.jsx",
+      "types": "./dist/server/index.d.ts"
+    },
+    "./server/spa": {
+      "import": "./dist/server/spa/index.jsx",
+      "types": "./dist/server/spa/index.d.ts"
+    },
+    "./client": {
+      "import": "./dist/client/index.jsx",
+      "types": "./dist/client/index.d.ts"
+    },
+    "./client/islands": {
+      "import": "./dist/client/islands.jsx",
+      "types": "./dist/client/islands.d.ts"
+    },
+    "./client/spa": {
+      "import": "./dist/client/spa/index.jsx",
+      "types": "./dist/client/spa/index.d.ts"
     }
   },
   "devDependencies": {
